@@ -67,7 +67,7 @@ export const ChatRoom = () => {
       {/* ==== HEADER ==== */}
       <header className="chat-room_header">
         <Typography variant="h6">
-          WebChats - Chat Room <Message />
+          Chat Room <Message />
         </Typography>
         <Button
           startIcon={<Logout />}
@@ -86,7 +86,7 @@ export const ChatRoom = () => {
         className="messages"
         ref={chatBoxRef}
         onScroll={handleScroll}
-        style={{ overflowY: "auto", height: "400px" }} // Ensure the height allows scrolling
+        style={{ overflowY: "auto", height: "600px" }}
       >
         {displayedMessages.map((message: MessageObject) => {
           return (

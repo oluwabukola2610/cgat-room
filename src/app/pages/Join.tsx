@@ -1,10 +1,10 @@
 import React, { useState, FormEvent } from "react";
 import { Button, TextField, Box, Typography, Container } from "@mui/material";
 import { Login } from "@mui/icons-material";
-import chatSvg from "../assets/svgs/chat.svg";
 import { Join as JoinChat } from "../../features/chatRoom.tsx/user";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../hooks";
+import Svg from "../Svg";
 
 export const Join = () => {
   const [username, setUsername] = useState<string>("");
@@ -47,7 +47,7 @@ export const Join = () => {
       </Box>
 
       <div className="side">
-        <img src={chatSvg} alt="Chat Room" />
+      <Svg />
       </div>
     </Container>
   );
